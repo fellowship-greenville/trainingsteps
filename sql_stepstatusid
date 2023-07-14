@@ -1,0 +1,11 @@
+SQL to find Step Status
+
+Select
+	t.Name as [Step Type Name],
+	s.Id as [Step Status Id],
+	s.Name as [Step Status Name]	
+
+From
+	StepType as t LEFT OUTER JOIN StepStatus as s
+
+ON t.StepProgramId = s.StepProgramId
